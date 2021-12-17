@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Tangerine&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <title>Cronômetro</title>
+</head>
+<body>
+    <header>
+       <h1 id="title">Cronômetro</h1>
+    </header>
+
+    <main>
+        <div id="options">
+            <button onclick="start();">iniciar</button>
+            <button id="pause" onclick="pause();">pausar</button>
+            <button onclick="reset();">zerar</button>
+        </div>
+
+        <div id="time">
+            <span class="time hour">00:</span>
+            <span class="time min">00:</span>
+            <span class="time sec">00</span>
+        </div>
+
+    </main>
+
+    <span id="author">
+        made by <span>Lucas Elias</span> using HTML/CSS/JS <span>16-12-2021</span>
+    </span>
+
+  
+
+    <script type="text/javascript" src="js/index.js"></script>
+</body>
+</html>

@@ -1,0 +1,151 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    font-family:Roboto,sans-serif;
+    height: 100vh;
+    background: linear-gradient(173.18deg, #143642 16.97%, #263C41 33.88%, #38413F 56.5%, #4A473E 69.23%);
+    
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+}
+
+header{
+    grid-column:2/3;
+    justify-self: center;
+}
+
+
+#title{
+    position:relative;
+    top:65px;
+    font-weight:unset;
+    font-size: 4em;
+    color:#FCFAFA;
+}
+
+main{
+    grid-column:2/3;
+    grid-row:2/3;
+    align-self: flex-start;
+    justify-self: center;
+}
+
+#options button{
+    font-family:Roboto;
+    font-weight: light;
+    font-size:2.1em;
+    background-color: transparent;
+    color:#BBC1C2;
+    border:0.4px solid #A7AEB0;
+    border-radius:5px;
+    
+}
+
+#options button:hover{
+    border:1.2px solid #FFFFFF;
+    color: #FFFFFF;
+    
+}
+
+#options button:nth-child(1){
+    padding:0 38px 0 38px;
+}
+
+#options button:nth-child(2){
+    margin:0 2em 0 2em;
+    padding:0 31px 0 31px;
+}
+
+#options button:nth-child(3){
+    padding:0 46px 0 46px;
+}
+
+#time{
+    position: relative;
+    top:80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: flex-end;
+}
+
+.time{
+    color:#E2E3E2;
+    font-family: Roboto, sans-serif;
+    font-size: 9.5em;
+}
+
+#author{
+    width:100%;
+    grid-column:3/3;
+    grid-row:3/3;
+    align-self: flex-end;
+    justify-self: right;
+    font-family: "Open Sans", sans-serif;
+    color:#FFFFFF;
+    font-size: 13px;
+    text-align: end;
+}
+
+#author span:nth-child(1){
+    font-family: 'Tangerine',cursive;
+    font-size: 24px;
+}
+
+#author span:nth-child(2){
+    font-size: 10px;
+}    
+
+
+@media (max-width:1275px){
+
+    #title{
+        position:relative;
+        top:15px;
+
+    }
+
+    #options{
+        margin-top:80px;
+    }
+    
+    #options button:hover{
+        border:1.2px solid #FFFFFF;
+        color: #FFFFFF;
+        
+    }
+    
+    #options button:nth-child(1){
+        margin-left:2em;
+        padding:0 38px 0 38px;
+    }
+    
+    #options button:nth-child(2){
+        margin:0 2em 0 2em;
+        padding:0 31px 0 31px;
+    }
+    
+    #options button:nth-child(3){
+        display: flex;
+        margin:33px auto;
+        padding:0 46px 0 46px;
+    }
+
+    
+    #time{
+        position: relative;
+        top:40px;
+    }
+
+    #author{
+        grid-column: 2/4;
+        font-size:8px;
+    }
+
+
+}
