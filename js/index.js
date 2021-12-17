@@ -97,8 +97,11 @@ function pause(){
     }
     else{
         var pause = document.getElementById("pause");
-        pause.innerText = "pausar";
-        start();
+        if(pause.innerText == "pausar"){}
+        else{
+            pause.innerText = "pausar";
+            start();
+        }     
     }
     
 }
